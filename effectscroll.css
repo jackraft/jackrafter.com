@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+img{
+    width: 200px;
+}
+
+body{
+  background: #42455a;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #42455a;
+  background: #ffffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #ffffff;
+} 
+section:nth-child(3){
+  color: #ffffff;
+  background: #42455a;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: left;
+  padding-left: 50px;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+/* Make Header Sticky */
+#header_container
+{
+    background: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    height: 80px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:1000;
+}
+
+#header
+{
+    line-height: 80px;
+    margin: 10 auto;
+    width: 940px;
+    text-align: center;
+    font-size: 26px;
+    color: #f5f5f5;
+    line-height: 28px;
+    margin-bottom: 14px;
+    font-family: 'Source Sans Pro',sans-serif;
+    z-index:1001;
+}
+#header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header ul li{
+    list-style: none;
+    font-family: "Asap", sans-serif;
+    color: #42455a;
+
+}
+
+
+ion-icon {
+    color: #42455a;
+    z-index: 2001;
+    font-size: 64px;
+    margin-left: 50px;
+    
+}
+/* CSS for the content of page. I am giving top and bottom 
+   padding of 80px to make sure the header and footer 
+   do not overlap the content. */
+
+
+  
+  
